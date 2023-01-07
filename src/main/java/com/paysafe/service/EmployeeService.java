@@ -5,6 +5,8 @@ import com.paysafe.repo.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class EmployeeService {
 
@@ -15,5 +17,10 @@ public class EmployeeService {
     public Employee registerData(Employee employee) {
 
         return employeeRepoImpl.save(employee);
+    }
+
+    public List<Employee> showAllData() {
+
+        return employeeRepoImpl.findAll();
     }
 }
