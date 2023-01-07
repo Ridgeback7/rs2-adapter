@@ -37,4 +37,12 @@ public class EmployeeController {
         return ResponseEntity.ok("Data Deleted Successfully");
     }
 
+    //dfgdghjkubnyjb
+    @PutMapping("/updateDataById/{empId}")
+    public ResponseEntity<String> updateDataById(@PathVariable int empId, @RequestBody Employee employee)
+    {
+        return ResponseEntity.ok("data updated successfully");
+    }
+
+
 }
