@@ -30,4 +30,11 @@ public class EmployeeController {
         return ResponseEntity.ok(employeeServiceImpl.showAllData());
     }
 
+    @DeleteMapping("/deleteDataById/{empId}")
+    public ResponseEntity<String> deleteDataById(@PathVariable int empId)
+    {
+        employeeServiceImpl.deleteById(empId);
+        return ResponseEntity.ok("Data Deleted Successfully");
+    }
+
 }
