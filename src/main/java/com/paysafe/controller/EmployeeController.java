@@ -30,7 +30,7 @@ public class EmployeeController {
     }
 
     @DeleteMapping("/deleteDataById/{empId}")
-    public ResponseEntity<String> deleteDataById(@PathVariable int empId) {
+    public ResponseEntity<String> deleteDataBqqyId(@PathVariable int empId) {
         employeeServiceImpl.deleteById(empId);
         return ResponseEntity.ok("Data Deleted Successfully");
     }
@@ -41,7 +41,7 @@ public class EmployeeController {
         return ResponseEntity.ok("data updated successfully");
     }
 
-    @GetMapping("/getbyrefid/{refId}")
+    @GetMapping("/getbyrefid/{empId}")
     public ResponseEntity<List<String>> getTranactionDetailsByRefId(@PathVariable int empId) {
         List<String> sl = new ArrayList<>();
         sl.add("1");
