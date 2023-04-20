@@ -22,8 +22,9 @@ public class Employee {
 
     private double empSalary;
 
-    private String empTimePass;
     private String empDob;
 
 
+    private String empTimePass;
+    //line 29 la changed add kele
 }
