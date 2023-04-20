@@ -22,4 +22,5 @@ public class Employee {
 
     private double empSalary;
 
+    private String empTimePass;
 }
